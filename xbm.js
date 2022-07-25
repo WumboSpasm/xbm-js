@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', async function() {
-    for (let img of document.querySelectorAll('img')) {
+    for (let img of document.querySelectorAll('img[src$=".xbm"]')) {
         let data = await new Promise(resolve => {
             let request = new XMLHttpRequest();
             request.open('GET', img.src);
